@@ -1,4 +1,4 @@
-package trabajoIntegrador;
+package metodosDeTraslado;
 
 public class Direccion {
 }
