@@ -1,3 +1,5 @@
+package trabajoIntegrador;
+
 public class Reserva {
     private MetodoDeTraslado metodoDeTraslado;
     private Direccion destino;
