@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="l7_oo_uTh0jJB0YojUIr">
-    <mxGraphModel dx="1261" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1236" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           <mxGeometry height="100" width="180" y="34" as="geometry" />
         </mxCell>
         <mxCell id="G4pzx0ZOlaxwdFF8T7qB-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;/div&gt;&lt;i&gt;MetodoDePago&lt;/i&gt;" vertex="1">
-          <mxGeometry height="314" width="180" x="447" y="190" as="geometry" />
+          <mxGeometry height="200" width="180" x="447" y="190" as="geometry" />
         </mxCell>
         <mxCell id="G4pzx0ZOlaxwdFF8T7qB-5" parent="G4pzx0ZOlaxwdFF8T7qB-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-atributos" vertex="1">
           <mxGeometry height="26" width="180" y="40" as="geometry" />
@@ -23,7 +23,7 @@
           <mxGeometry height="8" width="180" y="66" as="geometry" />
         </mxCell>
         <mxCell id="G4pzx0ZOlaxwdFF8T7qB-7" parent="G4pzx0ZOlaxwdFF8T7qB-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+procesamientoDePago():void&lt;div&gt;&lt;i&gt;+validarDatos():void&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;+reservarFondos():void&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;+ejecutarTransaccion():void&lt;/i&gt;&lt;/div&gt;&lt;div&gt;+notificarResultado():void&lt;/div&gt;" vertex="1">
-          <mxGeometry height="240" width="180" y="74" as="geometry" />
+          <mxGeometry height="126" width="180" y="74" as="geometry" />
         </mxCell>
         <mxCell id="G4pzx0ZOlaxwdFF8T7qB-8" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="BilleteraVirtualCripto" vertex="1">
           <mxGeometry height="134" width="160" x="721" y="620" as="geometry" />
