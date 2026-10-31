@@ -30,7 +30,7 @@ public class TransferenciaBancariaDirecta extends MetodoDePago{
     }
 
     @Override
-    public void validarDatos() {
+    public boolean validarDatos() {
         transferenciaAPI.validarCuenta();
     }
 }

@@ -30,7 +30,7 @@ public class BilleteraVirtualCripto extends MetodoDePago{
     }
 
     @Override
-    public void validarDatos() {
+    public boolean validarDatos() {
         billeteraVirtualAPI.validarSaldo();
     }
 }

@@ -58,4 +58,7 @@ public class Reserva {
 
     public double calcularValorTotal() { return 1.0; }
 
+    public void realizarPago(){
+        metodoDePago.procesamientoDePago(this);
+    }
 }

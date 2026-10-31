@@ -1,5 +1,7 @@
 package metodosDePago;
 
+import metodosDeTraslado.Reserva;
+
 public abstract class MetodoDePago {
 
     //atributos
@@ -17,20 +19,20 @@ public abstract class MetodoDePago {
     }
 
     //metodos
-    public void procesamientoDePago(){
-        metodoDePago.validarDatos();
-        metodoDePago.reservarFondos();
-        metodoDePago.ejecutarTransaccion();
-        metodoDePago.notificarResultado();
+    public void procesamientoDePago(Reserva reserva){
+        this.validarDatos();
+        this.reservarFondos();
+        this.ejecutarTransaccion(reserva.calcularValorTotal());
+        this.notificarResultado();
     }
 
-    public abstract void ejecutarTransaccion();
+    public abstract void ejecutarTransaccion(double monto);
 
     public abstract void reservarFondos() ;
 
     public abstract boolean validarDatos() ;
 
     public void notificarResultado() {
-        //hook method
+        //aca iria la implementacion de billetera virtual
     }
 }

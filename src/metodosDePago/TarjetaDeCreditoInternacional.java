@@ -28,17 +28,22 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
 
     //metodos
     @Override
-    public void ejecutarTransaccion() {
-        tarjetaAPI.ejecutarTransferencia();
+    public void ejecutarTransaccion(double monto) {
+        tarjetaAPI.ejecutarTransferencia(monto);
     }
 
     @Override
     public void reservarFondos() {
-        tarjetaAPI.reservarFondosBanco();
+        tarjetaAPI.preAutorizar();
     }
 
     @Override
     public boolean validarDatos() {
-            tarjetaAPI.validarTarjeta(numeroTarjeta,cvv,vencimiento);
+           return tarjetaAPI.validarTarjeta(numeroTarjeta,cvv,vencimiento);
+    }
+    @Override
+    public void notificarResultado(){
+        //completar despues
+
     }
 }
