@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="Vu9GPR-VDwrcOqww26SD">
-    <mxGraphModel dx="1622" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="904" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -113,7 +113,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="whRsR3-f8s-QCiJMGf11-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Reserva" vertex="1">
-          <mxGeometry height="238" width="340" x="878" y="110" as="geometry" />
+          <mxGeometry height="238" width="340" x="850" y="100" as="geometry" />
         </mxCell>
         <mxCell id="whRsR3-f8s-QCiJMGf11-10" parent="whRsR3-f8s-QCiJMGf11-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-metodoDeTraslado: MetodoDeTraslado&lt;div&gt;-destino: Direccion&lt;/div&gt;&lt;div&gt;-cantidadDePasajeros: int&lt;/div&gt;" vertex="1">
           <mxGeometry height="54" width="340" y="26" as="geometry" />
@@ -174,6 +174,18 @@
         </mxCell>
         <mxCell id="whRsR3-f8s-QCiJMGf11-29" parent="whRsR3-f8s-QCiJMGf11-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+new(PlataformaTransporte plataformaTransporte)&lt;/div&gt;+calcularCosto(Reserva):double&lt;div&gt;+getPlataformaTransporte():PlataformaTransporte&lt;/div&gt;&lt;div&gt;+setPlataformaTransporte(PlataformaTransporte plataforma):void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="141" width="370" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="whRsR3-f8s-QCiJMGf11-31" edge="1" parent="1" source="whRsR3-f8s-QCiJMGf11-12" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;defaultLabelBackgroundColor=page;exitX=0.007;exitY=0.019;exitDx=0;exitDy=0;exitPerimeter=0;" value="metodoDePago">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="310" as="sourcePoint" />
+            <mxPoint x="660" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="whRsR3-f8s-QCiJMGf11-32" connectable="0" parent="whRsR3-f8s-QCiJMGf11-31" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;inheritText=1;defaultLabelBackgroundColor=page;" value="0..n" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="whRsR3-f8s-QCiJMGf11-33" connectable="0" parent="whRsR3-f8s-QCiJMGf11-31" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=top;inheritText=1;defaultLabelBackgroundColor=page;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
