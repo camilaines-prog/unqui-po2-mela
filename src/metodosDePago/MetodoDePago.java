@@ -6,12 +6,6 @@ public abstract class MetodoDePago {
     private MetodoDePago metodoDePago;
 
     //constructor
-    public MetodoDePago(MetodoDePago metodoDePago) {
-        this.metodoDePago = metodoDePago;
-    }
-    public MetodoDePago() {
-
-    }
 
     //getters y setters
     public MetodoDePago getMetodoDePago() {
@@ -34,7 +28,7 @@ public abstract class MetodoDePago {
 
     public abstract void reservarFondos() ;
 
-    public abstract void validarDatos() ;
+    public abstract boolean validarDatos() ;
 
     public void notificarResultado() {
         //hook method
