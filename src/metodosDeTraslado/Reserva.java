@@ -1,17 +1,21 @@
 package metodosDeTraslado;
 
+import metodosDePago.MetodoDePago;
+
 public class Reserva {
 
     //atributos
     private MetodoDeTraslado metodoDeTraslado;
     private Direccion destino;
     private int cantidadDePasajeros;
+    private MetodoDePago metodoDePago;
 
     //constructor
-    public Reserva(MetodoDeTraslado metodoDeTraslado, Direccion destino , int cantidadDePasajeros){
+    public Reserva(MetodoDeTraslado metodoDeTraslado, Direccion destino , int cantidadDePasajeros, MetodoDePago metodoDePago){
         this.metodoDeTraslado= metodoDeTraslado;
         this.destino= destino;
         this.cantidadDePasajeros= cantidadDePasajeros;
+        this.metodoDePago=metodoDePago;
     }
 
     //getters y setters
@@ -37,6 +41,14 @@ public class Reserva {
 
     public void setCantidadDePasajeros(int cantidadDePasajeros) {
         this.cantidadDePasajeros = cantidadDePasajeros;
+    }
+
+    public MetodoDePago getMetodoDePago() {
+        return metodoDePago;
+    }
+
+    public void setMetodoDePago(MetodoDePago metodoDePago) {
+        this.metodoDePago = metodoDePago;
     }
 
     //metodos
