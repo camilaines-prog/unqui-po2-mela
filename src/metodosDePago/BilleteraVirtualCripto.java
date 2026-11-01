@@ -6,7 +6,8 @@ public class BilleteraVirtualCripto extends MetodoDePago{
     private ValidacionBilleteraVirtualAPI billeteraVirtualAPI;
 
     //constructor
-    public BilleteraVirtualCripto() {
+    public BilleteraVirtualCripto(ValidacionBilleteraVirtualAPI billeteraVirtualAPI) {
+        this.billeteraVirtualAPI=billeteraVirtualAPI;
     }
 
     //getters y setters
