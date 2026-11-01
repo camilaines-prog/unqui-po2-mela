@@ -25,6 +25,6 @@ public abstract class MetodoDePago {
     public abstract boolean validarDatos() ;
 
     public void notificarResultado() {
-        //aca iria la implementacion de billetera virtual
+        //registro codigo transaccion
     }
 }
