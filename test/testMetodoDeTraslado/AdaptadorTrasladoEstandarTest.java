@@ -19,18 +19,4 @@ public class AdaptadorTrasladoEstandarTest {
         trasladoEstandar=new AdaptadorTrasladoEstandar(plataforma);
     }
 
-    @Test
-    public void testVerificarObtencionDeLaPlataformaDeTransporteEnElAdaptadorDeTrasladoEstandar(){
-
-        assertEquals(plataforma, trasladoEstandar.getPlataformaTransporte());
-    }
-    @Test
-    public void testVerificarCambioDePlataformaDeTransporteEnMiAdaptadorTrasladoEstandar(){
-        PlataformaTransporte otraPlataforma;
-        otraPlataforma=mock(PlataformaTransporte.class);
-
-        trasladoEstandar.setPlataformaTransporte(otraPlataforma);
-
-        assertEquals(otraPlataforma,trasladoEstandar.getPlataformaTransporte());
-    }
 }

@@ -27,58 +27,5 @@ public class ReservaTest {
         metodoDePago= mock(TarjetaDeCreditoInternacional.class);
         reserva = new Reserva(metodoDeTraslado, destino, cantidadDePasajeros,metodoDePago);
     }
-    //EMPIEZO CON TEST RESERVA BASICO LUEGO ORGANIZAR BIEN !
-    
-    @Test
-    public void testVerificarCantidadDePasajerosEnUnaReserva(){
 
-        assertEquals(2,reserva.getCantidadDePasajeros());
-    }
-   @Test
-   public void testVerificarGetterDeMetodoDeTrasladoDeUnaReserva(){
-
-        assertEquals( metodoDeTraslado, reserva.getMetodoDeTraslado());
-   }
-   @Test
-    public void testVerificarGetterDeDestinoEnUnaReserva(){
-
-        assertEquals( destino , reserva.getDestino());
-   }
-   @Test
-    public void testVerificarSetterDeCantidadDePasajerosEnUnaReserva(){
-        reserva.setCantidadDePasajeros(3);
-
-        assertEquals(3,reserva.getCantidadDePasajeros());
-   }
-   @Test
-    public void testVerificarCambioDeMetodoDeTrasladoEnUnaReserva(){
-        MetodoDeTraslado metodoDeTrasladoVip;
-        metodoDeTrasladoVip=mock(AdaptadorTrasladoVip.class);
-
-        reserva.setMetodoDeTraslado(metodoDeTrasladoVip);
-
-        assertEquals(metodoDeTrasladoVip,reserva.getMetodoDeTraslado());
-   }
-   @Test
-    public void testVerificarCambioDeDestinoEnUnaReserva(){
-        Direccion otroDestino;
-        otroDestino= mock(Direccion.class);
-
-        reserva.setDestino(otroDestino);
-
-        assertEquals(otroDestino, reserva.getDestino());
-   }
-   @Test
-    public void testVerificarObtencionDeMetodoDePagoEnUnaReserva(){
-        assertEquals(metodoDePago, reserva.getMetodoDePago());
-   }
-   @Test
-    public void testVerificarCambioDeMetodoDePagoEnUnaReserva(){
-       TransferenciaBancariaDirecta otroMetodoDePago;
-       otroMetodoDePago= mock(TransferenciaBancariaDirecta.class);
-
-       reserva.setMetodoDePago(otroMetodoDePago);
-
-       assertEquals(otroMetodoDePago,reserva.getMetodoDePago());
-   }
 }

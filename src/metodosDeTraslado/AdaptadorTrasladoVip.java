@@ -11,13 +11,6 @@ public class AdaptadorTrasladoVip implements MetodoDeTraslado {
     }
 
     //getters y setters
-    public TrasladoVip getMetodoTrasladoVip() {
-        return metodoTrasladoVip;
-    }
-
-    public void setMetodoTrasladoVip(TrasladoVip metodoTrasladoVip) {
-        this.metodoTrasladoVip = metodoTrasladoVip;
-    }
 
     //metodos
     @Override

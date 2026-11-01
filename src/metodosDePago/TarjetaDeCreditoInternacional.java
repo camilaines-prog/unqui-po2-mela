@@ -18,13 +18,6 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
     }
 
     //getters y setters
-    public ValidacionTarjetaAPI getTarjetaAPI() {
-        return tarjetaAPI;
-    }
-
-    public void setTarjetaAPI(ValidacionTarjetaAPI tarjetaAPI) {
-        this.tarjetaAPI = tarjetaAPI;
-    }
 
     //metodos
     @Override
@@ -41,6 +34,7 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
     public boolean validarDatos() {
            return tarjetaAPI.validarTarjeta(numeroTarjeta,cvv,vencimiento);
     }
+
     @Override
     public void notificarResultado(){
         //completar despues

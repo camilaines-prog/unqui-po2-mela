@@ -10,17 +10,10 @@ public class BilleteraVirtualCripto extends MetodoDePago{
     }
 
     //getters y setters
-    public ValidacionBilleteraVirtualAPI getBilleteraVirtualAPI() {
-        return billeteraVirtualAPI;
-    }
-
-    public void setBilleteraVirtualAPI(ValidacionBilleteraVirtualAPI billeteraVirtualAPI) {
-        billeteraVirtualAPI = billeteraVirtualAPI;
-    }
 
     //metodos
     @Override
-    public void ejecutarTransaccion() {
+    public void ejecutarTransaccion(double monto) {
         billeteraVirtualAPI.acreditacion();
     }
 
@@ -31,6 +24,6 @@ public class BilleteraVirtualCripto extends MetodoDePago{
 
     @Override
     public boolean validarDatos() {
-        billeteraVirtualAPI.validarSaldo();
+        return billeteraVirtualAPI.validarSaldo();
     }
 }

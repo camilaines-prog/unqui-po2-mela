@@ -19,37 +19,6 @@ public class Reserva {
     }
 
     //getters y setters
-    public MetodoDeTraslado getMetodoDeTraslado() {
-        return metodoDeTraslado;
-    }
-
-    public void setMetodoDeTraslado(MetodoDeTraslado metodoDeTraslado) {
-        this.metodoDeTraslado = metodoDeTraslado;
-    }
-
-    public Direccion getDestino() {
-        return destino;
-    }
-
-    public void setDestino(Direccion destino) {
-        this.destino = destino;
-    }
-
-    public int getCantidadDePasajeros() {
-        return cantidadDePasajeros;
-    }
-
-    public void setCantidadDePasajeros(int cantidadDePasajeros) {
-        this.cantidadDePasajeros = cantidadDePasajeros;
-    }
-
-    public MetodoDePago getMetodoDePago() {
-        return metodoDePago;
-    }
-
-    public void setMetodoDePago(MetodoDePago metodoDePago) {
-        this.metodoDePago = metodoDePago;
-    }
 
     //metodos
     public double calcularCostoDeTraslado(){

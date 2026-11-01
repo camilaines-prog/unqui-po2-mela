@@ -11,13 +11,6 @@ public class AdaptadorTrasladoEstandar implements MetodoDeTraslado {
     }
 
     //getters y setters
-    public PlataformaTransporte getPlataformaTransporte() {
-        return plataformaTransporte;
-    }
-
-    public void setPlataformaTransporte(PlataformaTransporte plataformaTransporte) {
-        this.plataformaTransporte = plataformaTransporte;
-    }
 
     //metodos
     @Override

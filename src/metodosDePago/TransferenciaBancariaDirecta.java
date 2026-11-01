@@ -4,24 +4,34 @@ public class TransferenciaBancariaDirecta extends MetodoDePago{
 
     //atributos
     private ValidacionTransferenciaAPI transferenciaAPI;
+    private String alias;
+    private int cbu;
+    private boolean transferenciaInmediata;
+    private String fechaTransferencia;
 
     //constructor
-    public TransferenciaBancariaDirecta() {
+    public TransferenciaBancariaDirecta(ValidacionTransferenciaAPI transferenciaAPI, String alias,int cbu, boolean transferenciaInmediata) {
+        this.transferenciaAPI=transferenciaAPI;
+        this.alias=alias;
+        this.cbu=cbu;
+        this.transferenciaInmediata=transferenciaInmediata;
+    }
+    public TransferenciaBancariaDirecta(ValidacionTransferenciaAPI transferenciaAPI, String alias,int cbu, String fechaTransferencia) {
+        this.transferenciaAPI=transferenciaAPI;
+        this.alias=alias;
+        this.cbu=cbu;
+        this.fechaTransferencia=fechaTransferencia;
+        this.transferenciaInmediata=false;
     }
 
     //getters y setters
-    public ValidacionTarjetaAPI getTransferenciaAPI() {
-        return transferenciaAPI;
-    }
-
-    public void setTransferenciaAPI(ValidacionTarjetaAPI transferenciaAPI) {
-        this.transferenciaAPI = transferenciaAPI;
-    }
 
     //metodos
     @Override
-    public void ejecutarTransaccion() {
-        transferenciaAPI.ejecutarTransferencia();
+    public void ejecutarTransaccion(double monto) {
+        if(transferenciaInmediata) {
+            transferenciaAPI.ejecutarTransferenciaInmediata(monto);
+        }else transferenciaAPI.ejecutarTransferenciaProgramada(monto,fechaTransferencia);
     }
 
     @Override
@@ -31,6 +41,11 @@ public class TransferenciaBancariaDirecta extends MetodoDePago{
 
     @Override
     public boolean validarDatos() {
-        transferenciaAPI.validarCuenta();
+        return transferenciaAPI.validarCuenta(alias,cbu);
+    }
+
+    @Override
+    public void notificarResultado(){
+        //hacer implementacion
     }
 }

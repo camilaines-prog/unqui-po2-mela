@@ -19,17 +19,5 @@ public class AdaptadorTrasladoVipTest {
         adaptadorVip= new AdaptadorTrasladoVip(trasladoVip);
     }
 
-    @Test
-    public void testVerificarObtencionDeTrasladoVipEnElAdaptadorTrasladoVip(){
-        assertEquals(trasladoVip, adaptadorVip.getMetodoTrasladoVip());
-    }
-    @Test
-    public void testVerificarCambioAOtroTrasladoVipEnElAdaptadorTrasladoVip(){
-        TrasladoVip otroTrasladoVip;
-        otroTrasladoVip=mock(TrasladoVip.class);
 
-        adaptadorVip.setMetodoTrasladoVip(otroTrasladoVip);
-
-        assertEquals(otroTrasladoVip,adaptadorVip.getMetodoTrasladoVip());
-    }
 }
