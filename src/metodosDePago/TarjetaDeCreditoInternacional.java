@@ -27,12 +27,17 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
 
     @Override
     public void reservarFondos() {
-        tarjetaAPI.preAutorizar();
+
+        if (!tarjetaAPI.preAutorizar()){
+            throw new IllegalArgumentException("pre-autorizacion denegada");
+        };
     }
 
     @Override
-    public boolean validarDatos() {
-           return tarjetaAPI.validarTarjeta(numeroTarjeta,cvv,vencimiento);
+    public void validarDatos() {
+           if (!tarjetaAPI.validarTarjeta(numeroTarjeta,cvv,vencimiento)){
+               throw new IllegalArgumentException("error en la validacion de datos");
+           };
     }
 
     @Override

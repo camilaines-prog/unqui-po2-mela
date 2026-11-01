@@ -3,6 +3,7 @@ package metodosDePago;
 public interface ValidacionBilleteraVirtualAPI {
 
     public boolean validarSaldo();
-    public void bloquearSaldo();
-    public void acreditacion();
+    public boolean bloquearSaldo(BilleteraVirtualCripto billeteraVirtualCripto);
+    public boolean acreditacion(double monto);
+    public void notificacionPush();
 }

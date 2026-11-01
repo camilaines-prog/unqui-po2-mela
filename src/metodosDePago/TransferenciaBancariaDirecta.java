@@ -40,8 +40,10 @@ public class TransferenciaBancariaDirecta extends MetodoDePago{
     }
 
     @Override
-    public boolean validarDatos() {
-        return transferenciaAPI.validarCuenta(alias,cbu);
+    public void validarDatos() {
+        if(!transferenciaAPI.validarCuenta(alias,cbu)){
+            throw new IllegalArgumentException("error en la validacion de cbu y alias");
+        };
     }
 
     @Override

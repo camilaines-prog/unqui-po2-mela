@@ -22,7 +22,7 @@ public abstract class MetodoDePago {
 
     public abstract void reservarFondos() ;
 
-    public abstract boolean validarDatos() ;
+    public abstract void validarDatos() ;
 
     public void notificarResultado() {
         //registro codigo transaccion
