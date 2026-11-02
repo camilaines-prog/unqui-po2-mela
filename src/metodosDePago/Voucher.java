@@ -9,7 +9,6 @@ public class Voucher {
     public Voucher(int codigoDeTransaccion) {
         this.codigoDeTransaccion=codigoDeTransaccion;
     }
-
     //metodos
 
 }
