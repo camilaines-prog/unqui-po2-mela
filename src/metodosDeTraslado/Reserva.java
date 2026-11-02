@@ -19,13 +19,20 @@ public class Reserva {
     }
 
     //getters y setters
+    public int getCantidadDePasajeros() {
+        return cantidadDePasajeros;
+    }
+
+    public Direccion getDestino() {
+        return destino;
+    }
 
     //metodos
     public double calcularCostoDeTraslado(){
         return metodoDeTraslado.calcularCosto(this);
     }
 
-    public double calcularValorTotal() { return 1.0; }
+    public double calcularValorTotal() { return 0.0;};
 
     public void realizarPago(){
         metodoDePago.procesamientoDePago(this);

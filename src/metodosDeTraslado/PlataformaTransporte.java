@@ -1,13 +1,5 @@
 package metodosDeTraslado;
 
-public class PlataformaTransporte {
-
-    //constructor
-    public PlataformaTransporte() {
-    }
-
-    //metodos
-    public double estimarTraslado(Direccion direccion, int cantidadDePasajeros){
-        return 1.0;
-    }
+public interface PlataformaTransporte {
+    public double estimarTraslado(Direccion direccion, int cantidadDePasajeros);
 }

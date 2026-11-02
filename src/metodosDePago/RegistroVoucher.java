@@ -22,7 +22,7 @@ public class RegistroVoucher {
     }
 
     //metodos
-    public void guardar(Voucher voucher){
+    public void registrar(Voucher voucher){
         registroVoucher.add(voucher);
     }
 }

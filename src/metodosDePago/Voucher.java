@@ -2,12 +2,14 @@ package metodosDePago;
 
 public class Voucher {
 
+    //atributos
+    private int codigoDeTransaccion;
+
     //constructor
-    public Voucher() {
+    public Voucher(int codigoDeTransaccion) {
+        this.codigoDeTransaccion=codigoDeTransaccion;
     }
 
     //metodos
-    public void registrarVoucher(RegistroVoucher registroVoucher){
-        registroVoucher.guardar(this);
-    }
+
 }

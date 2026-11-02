@@ -5,10 +5,14 @@ import metodosDeTraslado.Reserva;
 public abstract class MetodoDePago {
 
     //atributos
-
+    private int codigoDeTransaccion;
     //constructor
 
     //getters y setters
+
+    public int getCodigoDeTransaccion() {
+        return codigoDeTransaccion;
+    }
 
     //metodos
     public void procesamientoDePago(Reserva reserva){
@@ -25,6 +29,8 @@ public abstract class MetodoDePago {
     public abstract void validarDatos() ;
 
     public void notificarResultado() {
-        //registro codigo transaccion
+        this.registroCodigoTransaccion();
+    }
+    private void registroCodigoTransaccion() {
     }
 }
