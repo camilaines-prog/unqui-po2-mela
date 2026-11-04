@@ -7,15 +7,15 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
     private String numeroTarjeta;
     private int cvv;
     private String vencimiento;
-    //private RegistroVoucher registroDeVoucher;
+    private RegistroVoucher registroDeVoucher;
 
     //constructor
-    public TarjetaDeCreditoInternacional(ValidacionTarjetaAPI tarjetaAPI, String numeroTarjeta, int cvv, String vencimiento) {
+    public TarjetaDeCreditoInternacional(ValidacionTarjetaAPI tarjetaAPI, String numeroTarjeta, int cvv,RegistroVoucher registroDeVoucher, String vencimiento) {
         this.tarjetaAPI=tarjetaAPI;
         this.numeroTarjeta=numeroTarjeta;
         this.cvv=cvv;
         this.vencimiento=vencimiento;
-        //this.registroDeVouchers=new RegistroVoucher();
+        this.registroDeVoucher=registroDeVoucher;
     }
 
     //getters y setters
@@ -43,7 +43,7 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
 
     @Override
     public void notificarResultado(){
-        //registroDeVoucher.registrar(new Voucher(this.getCodigoDeTransaccion()));
+        registroDeVoucher.registrar(new Voucher(this.getCodigoDeTransaccion()));
 
     }
 }

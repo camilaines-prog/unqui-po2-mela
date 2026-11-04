@@ -15,10 +15,10 @@ public abstract class MetodoDePago {
     }
 
     //metodos
-    public void procesamientoDePago(Reserva reserva){
+    public void procesamientoDePago(double valorTotal){
         this.validarDatos();
         this.reservarFondos();
-        this.ejecutarTransaccion(reserva.calcularValorTotal());
+        this.ejecutarTransaccion(valorTotal);
         this.notificarResultado();
     }
 

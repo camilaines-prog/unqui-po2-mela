@@ -1,12 +1,12 @@
 package metodosDeTraslado;
 
-public class PuntoDeEncuentro implements MetodoDeTraslado{
+public class CostoPuntoDeEncuentro implements MetodoDeTraslado{
 
     //atributos
     private CupoDeGuias cupoDeGuias;
 
     //constructor
-    public PuntoDeEncuentro(CupoDeGuias cupoDeGuias) {
+    public CostoPuntoDeEncuentro(CupoDeGuias cupoDeGuias) {
     }
 
     //metodos

@@ -1,12 +1,12 @@
 package metodosDeTraslado;
 
-public class AdaptadorTrasladoVip implements MetodoDeTraslado {
+public class CostoTrasladoVip implements MetodoDeTraslado {
 
     //atributos
     private TrasladoVip metodoTrasladoVip;
 
     //constructor
-    public AdaptadorTrasladoVip(TrasladoVip metodoTrasladoVip) {
+    public CostoTrasladoVip(TrasladoVip metodoTrasladoVip) {
         this.metodoTrasladoVip = metodoTrasladoVip;
     }
 

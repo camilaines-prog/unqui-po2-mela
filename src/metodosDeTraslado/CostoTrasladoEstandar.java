@@ -1,12 +1,12 @@
 package metodosDeTraslado;
 
-public class AdaptadorTrasladoEstandar implements MetodoDeTraslado {
+public class CostoTrasladoEstandar implements MetodoDeTraslado {
 
     //atributos
     private PlataformaTransporte plataformaTransporte;
 
     //constructor
-    public AdaptadorTrasladoEstandar(PlataformaTransporte plataformaTransporte) {
+    public CostoTrasladoEstandar(PlataformaTransporte plataformaTransporte) {
         this.plataformaTransporte = plataformaTransporte;
     }
 

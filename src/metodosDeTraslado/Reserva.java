@@ -9,6 +9,7 @@ public class Reserva {
     private Direccion destino;
     private int cantidadDePasajeros;
     private MetodoDePago metodoDePago;
+    private double valorTotal;
 
     //constructor
     public Reserva(MetodoDeTraslado metodoDeTraslado, Direccion destino , int cantidadDePasajeros, MetodoDePago metodoDePago){
@@ -27,14 +28,15 @@ public class Reserva {
         return destino;
     }
 
+    public double getValorTotal(){return valorTotal ;}
+
     //metodos
     public double calcularCostoDeTraslado(){
         return metodoDeTraslado.calcularCosto(this);
     }
 
-    public double calcularValorTotal() { return 0.0;};
 
     public void realizarPago(){
-        metodoDePago.procesamientoDePago(this);
+        metodoDePago.procesamientoDePago(this.getValorTotal());
     }
 }

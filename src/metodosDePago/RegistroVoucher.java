@@ -13,13 +13,6 @@ public class RegistroVoucher {
     }
 
     //getters y setters
-    public ArrayList<Voucher> getRegistroVoucher() {
-        return registroVoucher;
-    }
-
-    public void setRegistroVoucher(ArrayList<Voucher> registroVoucher) {
-        this.registroVoucher = registroVoucher;
-    }
 
     //metodos
     public void registrar(Voucher voucher){

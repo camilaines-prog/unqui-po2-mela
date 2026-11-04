@@ -8,20 +8,23 @@ public class TransferenciaBancariaDirecta extends MetodoDePago{
     private int cbu;
     private boolean transferenciaInmediata;
     private String fechaTransferencia;
+    private RegistroComprobante registroComprobantes;
 
     //constructor
-    public TransferenciaBancariaDirecta(ValidacionTransferenciaAPI transferenciaAPI, String alias,int cbu, boolean transferenciaInmediata) {
+    public TransferenciaBancariaDirecta(ValidacionTransferenciaAPI transferenciaAPI, String alias,int cbu,RegistroComprobante registroComprobante, boolean transferenciaInmediata) {
         this.transferenciaAPI=transferenciaAPI;
         this.alias=alias;
         this.cbu=cbu;
         this.transferenciaInmediata=transferenciaInmediata;
+        this.registroComprobantes= registroComprobante;
     }
-    public TransferenciaBancariaDirecta(ValidacionTransferenciaAPI transferenciaAPI, String alias,int cbu, String fechaTransferencia) {
+    public TransferenciaBancariaDirecta(ValidacionTransferenciaAPI transferenciaAPI, String alias,int cbu,RegistroComprobante registroComprobante, String fechaTransferencia) {
         this.transferenciaAPI=transferenciaAPI;
         this.alias=alias;
         this.cbu=cbu;
         this.fechaTransferencia=fechaTransferencia;
         this.transferenciaInmediata=false;
+        this.registroComprobantes= registroComprobante;
     }
 
     //getters y setters
@@ -48,6 +51,7 @@ public class TransferenciaBancariaDirecta extends MetodoDePago{
 
     @Override
     public void notificarResultado(){
-        //hacer implementacion
+        registroComprobantes.registrar(new Comprobante(this.getCodigoDeTransaccion()));
+
     }
 }
