@@ -1,12 +1,12 @@
 package metodosDeTraslado;
 
-public class CostoTrasladoVip implements MetodoDeTraslado {
+public class TrasladoAltaGama implements MetodoDeTraslado {
 
     //atributos
     private TrasladoVip metodoTrasladoVip;
 
     //constructor
-    public CostoTrasladoVip(TrasladoVip metodoTrasladoVip) {
+    public TrasladoAltaGama(TrasladoVip metodoTrasladoVip) {
         this.metodoTrasladoVip = metodoTrasladoVip;
     }
 
@@ -15,8 +15,7 @@ public class CostoTrasladoVip implements MetodoDeTraslado {
     //metodos
     @Override
     public double calcularCosto(Reserva reserva) {
-        double valorDeReserva= reserva.calcularValorTotal();
-        return metodoTrasladoVip.calcularCosto(valorDeReserva);
+        return metodoTrasladoVip.calcularCosto(reserva.getValorTotal());
     }
 
 

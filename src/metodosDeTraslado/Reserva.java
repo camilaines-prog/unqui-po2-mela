@@ -6,13 +6,13 @@ public class Reserva {
 
     //atributos
     private MetodoDeTraslado metodoDeTraslado;
-    private Direccion destino;
+    private String destino;
     private int cantidadDePasajeros;
     private MetodoDePago metodoDePago;
     private double valorTotal;
 
     //constructor
-    public Reserva(MetodoDeTraslado metodoDeTraslado, Direccion destino , int cantidadDePasajeros, MetodoDePago metodoDePago){
+    public Reserva(MetodoDeTraslado metodoDeTraslado, String destino , int cantidadDePasajeros, MetodoDePago metodoDePago){
         this.metodoDeTraslado= metodoDeTraslado;
         this.destino= destino;
         this.cantidadDePasajeros= cantidadDePasajeros;
@@ -24,7 +24,7 @@ public class Reserva {
         return cantidadDePasajeros;
     }
 
-    public Direccion getDestino() {
+    public String getDestino() {
         return destino;
     }
 
