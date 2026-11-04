@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="Vu9GPR-VDwrcOqww26SD">
-    <mxGraphModel dx="1551" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1441" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -119,7 +119,7 @@
         <mxCell id="S8o3GiCoarjviK4ogyPp-4" edge="1" parent="1" source="whRsR3-f8s-QCiJMGf11-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="S8o3GiCoarjviK4ogyPp-3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="whRsR3-f8s-QCiJMGf11-16" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CostoTrasladoVip" vertex="1">
+        <mxCell id="whRsR3-f8s-QCiJMGf11-16" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AltaGama" vertex="1">
           <mxGeometry height="167" width="250" x="1650" y="440" as="geometry" />
         </mxCell>
         <mxCell id="whRsR3-f8s-QCiJMGf11-17" parent="whRsR3-f8s-QCiJMGf11-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-metodoTrasladoVip:metodoTrasladoVip" vertex="1">
@@ -134,7 +134,7 @@
         <mxCell id="S8o3GiCoarjviK4ogyPp-2" edge="1" parent="1" source="whRsR3-f8s-QCiJMGf11-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="S8o3GiCoarjviK4ogyPp-1" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="whRsR3-f8s-QCiJMGf11-26" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CostoTrasladoEstandar" vertex="1">
+        <mxCell id="whRsR3-f8s-QCiJMGf11-26" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="TrasladoEstandar" vertex="1">
           <mxGeometry height="167" width="273" x="1300" y="450" as="geometry" />
         </mxCell>
         <mxCell id="whRsR3-f8s-QCiJMGf11-27" parent="whRsR3-f8s-QCiJMGf11-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-plataformaTransporte: PlataformaTransporte" vertex="1">
@@ -176,7 +176,7 @@
         <mxCell id="S8o3GiCoarjviK4ogyPp-5" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;CupoDeGuias&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+hayCupo():boolean&lt;/p&gt;" vertex="1">
           <mxGeometry height="100" width="239" x="1971" y="720" as="geometry" />
         </mxCell>
-        <mxCell id="S8o3GiCoarjviK4ogyPp-8" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CostoPuntoDeEncuento" vertex="1">
+        <mxCell id="S8o3GiCoarjviK4ogyPp-8" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PuntoDeEncuentro" vertex="1">
           <mxGeometry height="140" width="230" x="1975.5" y="445" as="geometry" />
         </mxCell>
         <mxCell id="S8o3GiCoarjviK4ogyPp-9" parent="S8o3GiCoarjviK4ogyPp-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-cupoDeGuias: CupoDeGuias" vertex="1">
