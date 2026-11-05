@@ -10,6 +10,10 @@ public abstract class MetodoDePago {
 
     //getters y setters
 
+    public void setCodigoDeTransaccion(int codigoDeTransaccion) {
+        this.codigoDeTransaccion = codigoDeTransaccion;
+    }
+
     public int getCodigoDeTransaccion() {
         return codigoDeTransaccion;
     }
@@ -31,6 +35,7 @@ public abstract class MetodoDePago {
     public void notificarResultado() {
         this.registroCodigoTransaccion();
     }
+
     private void registroCodigoTransaccion() {
     }
 }

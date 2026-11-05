@@ -102,4 +102,5 @@ public class TarjetaCreditoInternacionalTest {
 
         verify(registro).registrar(any(Voucher.class));
     }
+
 }

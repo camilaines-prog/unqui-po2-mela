@@ -20,6 +20,8 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
 
     //getters y setters
 
+
+
     //metodos
     @Override
     public void ejecutarTransaccion(double monto) {

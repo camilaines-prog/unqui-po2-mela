@@ -1,6 +1,7 @@
 package metodosDePago;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class RegistroVoucher {
 
@@ -14,8 +15,13 @@ public class RegistroVoucher {
 
     //getters y setters
 
+    public ArrayList<Voucher> getRegistroVoucher() {
+        return registroVoucher;
+    }
+
     //metodos
     public void registrar(Voucher voucher){
         registroVoucher.add(voucher);
     }
+
 }

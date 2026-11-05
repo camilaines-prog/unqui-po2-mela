@@ -10,5 +10,4 @@ public class Voucher {
         this.codigoDeTransaccion=codigoDeTransaccion;
     }
     //metodos
-
 }
