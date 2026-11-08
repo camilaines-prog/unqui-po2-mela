@@ -1,6 +1,6 @@
 package metodosDeTraslado;
 
-import Registros.ArchivoDeRegistro;
+import Registros.ArchivoDeRegistros;
 import metodosDePago.MetodoDePago;
 
 public class Reserva {
@@ -10,16 +10,16 @@ public class Reserva {
     private Direccion destino;
     private int cantidadDePasajeros;
     private MetodoDePago metodoDePago;
-    private ArchivoDeRegistro registro;
+    private ArchivoDeRegistros archivoDeRegistros;
     private double valorTotal;
 
     //constructor
-    public Reserva(MetodoDeTraslado metodoDeTraslado, Direccion destino , int cantidadDePasajeros, MetodoDePago metodoDePago, ArchivoDeRegistro registro){
+    public Reserva(MetodoDeTraslado metodoDeTraslado, Direccion destino , int cantidadDePasajeros, MetodoDePago metodoDePago, ArchivoDeRegistros archivoDeRegistros){
         this.metodoDeTraslado= metodoDeTraslado;
         this.destino= destino;
         this.cantidadDePasajeros= cantidadDePasajeros;
         this.metodoDePago=metodoDePago;
-        this.registro=registro;
+        this.archivoDeRegistros=archivoDeRegistros;
     }
 
     //getters y setters
@@ -27,15 +27,16 @@ public class Reserva {
         return cantidadDePasajeros;
     }
 
-    public String getDestino() {
+    public Direccion getDestino() {
         return destino;
     }
 
     public double getValorTotal(){return valorTotal ;}
 
-    public ArchivoDeRegistro getRegistro(){
-        return registro;
+    public ArchivoDeRegistros getArchivoDeRegistros(){
+        return archivoDeRegistros;
     }
+
     //metodos
     public double calcularCostoDeTraslado(){
         return metodoDeTraslado.calcularCosto(this);

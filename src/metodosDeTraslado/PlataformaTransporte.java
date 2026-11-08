@@ -1,5 +1,5 @@
 package metodosDeTraslado;
 
 public interface PlataformaTransporte {
-    public double estimarTraslado(String direccion, int cantidadDePasajeros);
+    public double estimarTraslado(Direccion direccion, int cantidadDePasajeros);
 }

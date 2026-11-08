@@ -1,6 +1,6 @@
 package testMetodoDePago;
 
-import Registros.ArchivoDeRegistro;
+import Registros.ArchivoDeRegistros;
 import metodosDePago.*;
 import Registros.Voucher;
 import metodosDeTraslado.Reserva;
@@ -17,7 +17,7 @@ public class TarjetaCreditoInternacionalTest {
     String numeroTarjeta;
     String vencimiento;
     int cvv;
-    ArchivoDeRegistro registro;
+    ArchivoDeRegistros registro;
     Voucher voucher;
     Reserva reserva;
     double valorReserva= 800.0;
@@ -26,7 +26,7 @@ public class TarjetaCreditoInternacionalTest {
     @BeforeEach
     void setUp(){
 
-        registro= mock(ArchivoDeRegistro.class);
+        registro= mock(ArchivoDeRegistros.class);
         api=mock(ValidacionTarjetaAPI.class);
         voucher=mock(Voucher.class);
         reserva=mock(Reserva.class);

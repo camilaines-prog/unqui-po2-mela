@@ -1,6 +1,6 @@
 package testMetodoDePago;
 
-import Registros.ArchivoDeRegistro;
+import Registros.ArchivoDeRegistros;
 import Registros.Voucher;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,13 +11,13 @@ import static org.mockito.Mockito.mock;
 
 public class RegistroTest {
 
-    ArchivoDeRegistro registro;
+    ArchivoDeRegistros registro;
     Voucher voucher;
 
     @BeforeEach
     void setUp() {
         voucher=mock(Voucher.class);
-        registro = new ArchivoDeRegistro();
+        registro = new ArchivoDeRegistros();
     }
     @Test
     void testRegistroDeUnVoucherEnMiRegistroDeVouchers(){

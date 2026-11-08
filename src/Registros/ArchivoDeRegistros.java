@@ -2,21 +2,17 @@ package Registros;
 
 import java.util.ArrayList;
 
-public class ArchivoDeRegistro {
+public class ArchivoDeRegistros {
 
     //atributos
     private ArrayList<Registro> registros;
 
     //constructor
-    public ArchivoDeRegistro() {
+    public ArchivoDeRegistros() {
         registros= new ArrayList<Registro>();
     }
 
     //getters y setters
-
-    public ArrayList<Registro> getRegistros() {
-        return registros;
-    }
 
     //metodos
     public void archivarRegistro(Registro registro){
