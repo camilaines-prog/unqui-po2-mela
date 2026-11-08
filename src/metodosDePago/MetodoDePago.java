@@ -19,20 +19,20 @@ public abstract class MetodoDePago {
     }
 
     //metodos
-    public void procesamientoDePago(double valorTotal){
+    public void procesamientoDePago(Reserva reserva){
         this.validarDatos();
         this.reservarFondos();
-        this.ejecutarTransaccion(valorTotal);
-        this.notificarResultado();
+        this.ejecutarTransaccion(reserva);
+        this.notificarResultado(reserva);
     }
 
-    public abstract void ejecutarTransaccion(double monto);
+    public abstract void ejecutarTransaccion(Reserva reserva);
 
     public abstract void reservarFondos() ;
 
     public abstract void validarDatos() ;
 
-    public void notificarResultado() {
+    public void notificarResultado(Reserva reserva) {
         this.registroCodigoTransaccion();
     }
 

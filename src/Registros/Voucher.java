@@ -1,6 +1,6 @@
-package metodosDePago;
+package Registros;
 
-public class Voucher {
+public class Voucher implements Registro {
 
     //atributos
     private int codigoDeTransaccion;

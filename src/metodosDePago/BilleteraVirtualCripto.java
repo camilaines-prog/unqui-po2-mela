@@ -1,5 +1,7 @@
 package metodosDePago;
 
+import metodosDeTraslado.Reserva;
+
 public class BilleteraVirtualCripto extends MetodoDePago{
 
     //atributos
@@ -14,9 +16,9 @@ public class BilleteraVirtualCripto extends MetodoDePago{
 
     //metodos
     @Override
-    public void ejecutarTransaccion(double monto) {
+    public void ejecutarTransaccion(Reserva reserva) {
 
-        if (!billeteraVirtualAPI.acreditacion(monto)){
+        if (!billeteraVirtualAPI.acreditacion(reserva.getValorTotal())){
             throw new IllegalArgumentException("ocurrio un error en la acreditacion al vendedor");
         };
     }
@@ -36,7 +38,7 @@ public class BilleteraVirtualCripto extends MetodoDePago{
         };
     }
     @Override
-    public void notificarResultado(){
+    public void notificarResultado(Reserva reserva){
         billeteraVirtualAPI.notificacionPush();
     }
 }

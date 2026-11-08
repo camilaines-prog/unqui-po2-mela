@@ -1,6 +1,6 @@
-package metodosDePago;
+package Registros;
 
-public class Comprobante {
+public class Comprobante implements Registro {
 
     private int numeroOperacion;
 

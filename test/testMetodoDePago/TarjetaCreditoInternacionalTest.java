@@ -1,7 +1,8 @@
 package testMetodoDePago;
 
+import Registros.ArchivoDeRegistro;
 import metodosDePago.*;
-import metodosDePago.Voucher;
+import Registros.Voucher;
 import metodosDeTraslado.Reserva;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,7 @@ public class TarjetaCreditoInternacionalTest {
     String numeroTarjeta;
     String vencimiento;
     int cvv;
-    RegistroVoucher registro;
+    ArchivoDeRegistro registro;
     Voucher voucher;
     Reserva reserva;
     double valorReserva= 800.0;
@@ -25,7 +26,7 @@ public class TarjetaCreditoInternacionalTest {
     @BeforeEach
     void setUp(){
 
-        registro= mock(RegistroVoucher.class);
+        registro= mock(ArchivoDeRegistro.class);
         api=mock(ValidacionTarjetaAPI.class);
         voucher=mock(Voucher.class);
         reserva=mock(Reserva.class);

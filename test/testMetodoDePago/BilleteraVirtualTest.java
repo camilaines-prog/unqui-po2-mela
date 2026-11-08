@@ -1,7 +1,5 @@
 package testMetodoDePago;
 import metodosDePago.*;
-import metodosDePago.Voucher;
-import metodosDeTraslado.Reserva;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

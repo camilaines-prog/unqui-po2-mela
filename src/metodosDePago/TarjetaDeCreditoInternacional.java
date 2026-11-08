@@ -1,5 +1,8 @@
 package metodosDePago;
 
+import Registros.Voucher;
+import metodosDeTraslado.Reserva;
+
 public class TarjetaDeCreditoInternacional extends MetodoDePago{
 
     //atributos
@@ -7,25 +10,21 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
     private String numeroTarjeta;
     private int cvv;
     private String vencimiento;
-    private RegistroVoucher registroDeVoucher;
 
     //constructor
-    public TarjetaDeCreditoInternacional(ValidacionTarjetaAPI tarjetaAPI, String numeroTarjeta, int cvv,RegistroVoucher registroDeVoucher, String vencimiento) {
+    public TarjetaDeCreditoInternacional(ValidacionTarjetaAPI tarjetaAPI, String numeroTarjeta, int cvv, String vencimiento) {
         this.tarjetaAPI=tarjetaAPI;
         this.numeroTarjeta=numeroTarjeta;
         this.cvv=cvv;
         this.vencimiento=vencimiento;
-        this.registroDeVoucher=registroDeVoucher;
     }
 
     //getters y setters
 
-
-
     //metodos
     @Override
-    public void ejecutarTransaccion(double monto) {
-        tarjetaAPI.ejecutarTransferencia(monto);
+    public void ejecutarTransaccion(Reserva reserva) {
+        tarjetaAPI.ejecutarTransferencia(reserva.getValorTotal());
     }
 
     @Override
@@ -44,8 +43,8 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
     }
 
     @Override
-    public void notificarResultado(){
-        registroDeVoucher.registrar(new Voucher(this.getCodigoDeTransaccion()));
+    public void notificarResultado(Reserva reserva){
+        reserva.getRegistro().registrar(new Voucher(this.getCodigoDeTransaccion()));
 
     }
 }
