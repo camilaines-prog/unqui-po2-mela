@@ -19,7 +19,7 @@ public class ArchivoDeRegistro {
     }
 
     //metodos
-    public void registrar(Registro registro){
+    public void archivarRegistro(Registro registro){
         registros.add(registro);
     }
 

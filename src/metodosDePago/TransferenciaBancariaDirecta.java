@@ -36,7 +36,7 @@ public abstract class TransferenciaBancariaDirecta extends MetodoDePago{
 
     @Override
     public void notificarResultado(Reserva reserva){
-        reserva.getRegistro().registrar(new Comprobante(this.getCodigoDeTransaccion()));
+        reserva.getRegistro().archivarRegistro(new Comprobante(this.getCodigoDeTransaccion()));
 
     }
 }

@@ -21,7 +21,7 @@ public class RegistroTest {
     }
     @Test
     void testRegistroDeUnVoucherEnMiRegistroDeVouchers(){
-        registro.registrar(voucher);
+        registro.archivarRegistro(voucher);
 
         assertEquals(1, registro.getRegistroVoucher().size());
         assertTrue(registro.getRegistroVoucher().contains(voucher));

@@ -101,7 +101,7 @@ public class TarjetaCreditoInternacionalTest {
 
         tarjeta.procesamientoDePago(valorReserva);
 
-        verify(registro).registrar(any(Voucher.class));
+        verify(registro).archivarRegistro(any(Voucher.class));
     }
 
 }

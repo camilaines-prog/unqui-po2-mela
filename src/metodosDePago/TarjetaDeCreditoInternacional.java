@@ -44,7 +44,7 @@ public class TarjetaDeCreditoInternacional extends MetodoDePago{
 
     @Override
     public void notificarResultado(Reserva reserva){
-        reserva.getRegistro().registrar(new Voucher(this.getCodigoDeTransaccion()));
+        reserva.getRegistro().archivarRegistro(new Voucher(this.getCodigoDeTransaccion()));
 
     }
 }
