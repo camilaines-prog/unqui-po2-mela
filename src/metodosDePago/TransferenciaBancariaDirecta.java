@@ -6,7 +6,7 @@ import metodosDeTraslado.Reserva;
 public abstract class TransferenciaBancariaDirecta extends MetodoDePago{
 
     //atributos
-    private ValidacionTransferenciaAPI transferenciaAPI;
+    protected ValidacionTransferenciaAPI transferenciaAPI;
     private String alias;
     private int cbu;
 
